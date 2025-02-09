@@ -1,0 +1,5 @@
+print ("******************\n*Welcome to Silpo*\n******************")
+item = input ("What are you buing?")
+price = input (f"How much does {item} cost?")
+quantity = input (f"How many {item}(s) are you buing?")
+print (f"Added {quantity} {item}(s) to the shopping cart.\nSubtotal: ${float(price)* float (quantity)}")
