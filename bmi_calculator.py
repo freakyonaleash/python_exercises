@@ -1,11 +1,12 @@
 system = input ("Which measurements system do you prefer:metric or imperial?").lower().strip()
 if system == "metric":
     height = input("What is your height in meters?")
-    if height.find(".") != -1:     
-    elif float(height) < 3:
-        height = height
+    if height.find(".") != -1:
+            if float(height) >= 3:
+                height = (float(height)/100)
     else:
-        height = (float(height)/100)
+        if float(height) >=3: 
+            height = (float(height)/100)
     
     weight = input("What is your weight in kilograms?")
 elif system == "imperial":
