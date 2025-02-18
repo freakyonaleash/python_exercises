@@ -47,11 +47,20 @@
 #         print (itr)
 # print(total)
 
-for num in rannge(10, 1, -2):
-    print(num)
+# for num in range(10, 1, -2):
+#     print(num)
 
-count = 10
-while count >=1:
-    print (count)
-    count-=2
+# count = 10
+# while count >=1:
+#     print (count)
+#     count-=2
+# for letter in "fjffjfjfljdjffjskasdiowovhghgpjd;kkfp":
+#     print(letter)
+#     if letter =="d":
+#         break
+
+for outer in range (1,11):
+    print (outer)
+    for inner  in range (10,0,-1):
+        print ("\t", "inner")
 
