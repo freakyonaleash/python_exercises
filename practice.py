@@ -1,4 +1,4 @@
-# from random import randint
+from random import randint
 
 # rand = randint(0,1)
 # if rand == 0:
@@ -59,8 +59,22 @@
 #     if letter =="d":
 #         break
 
-for outer in range (1,11):
-    print (outer)
-    for inner  in range (10,0,-1):
-        print ("\t", "inner")
+# for outer in range (1,11):
+#     print (outer)
+#     for inner  in range (10,0,-1):
+#         print ("\t", "inner")
+
+num_dice = int(input("How many dice?"))
+num_sides = int(input("How many sides?"))
+
+while True:
+    output = "|"
+    for die in range (num_dice):
+        roll = (randint(1, num_sides))
+        output += f"{roll} |"
+    print (output)
+    reply = input ("Roll again? ('q' to quit)")
+    if reply == "q":
+         break
+
 
