@@ -121,13 +121,66 @@ from random import randint
 # result = slugify (" Hey HEY hEYYY ")
 # print (result)
 
-def vowel_counter (message):
-    vowel = 0
-    for itr in message:
-        if itr in ("aeiou"):
-            vowel +=1
-    print(vowel)
-    return vowel
+# def vowel_counter (message):
+#     vowel = 0
+#     for itr in message:
+#         if itr in ("aeiou"):
+#             vowel +=1
+#     print(vowel)
+#     return vowel
 
-result = vowel_counter ("Helloooo")
-print (result)
+# result = vowel_counter ("Helloooo")
+# print (result)
+
+# def laugh (strenth=2):
+#     print ("HA"*strenth)
+
+# laugh (10)
+# laugh ()
+
+# def slugify (message, sep = "-"):
+#     return message.strip().lower().replace(" ", sep)
+
+# result = slugify (" Hey HEY hEYYY Hey CAN u HEaR mEEEEE ")
+# print (result)
+
+# def greet (message, name):
+#     print (f"{message}, you {name}!!!")
+
+# greet ("hello", "silly goose")
+# greet ("farewell", "chunky hippo")
+
+# animal = "cat"
+
+# print ("Outside of function", animal)
+
+# def func():
+#     print ("Inside function", animal)
+
+# func()
+# animal = "Hippo"
+# def zoo ():
+#     animal = "Lion"
+#     print ("Inside zoo function, ", animal)
+
+# zoo()
+
+# print ("Outside zoo function, ", animal)
+
+# def outside ():
+#     a = 44
+#     def inside ():
+#         print (f"a is: {a}")
+#     inside ()
+
+# outside()
+
+animal = "Doggo"
+
+def outer ():
+    global animal 
+    animal = "Kitty"
+    print (animal)
+
+outer()
+print (animal)
